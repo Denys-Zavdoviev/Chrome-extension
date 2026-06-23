@@ -1,0 +1,35 @@
+{
+  "name": "Reviewer Helper",
+  "version": "0.0.1",
+  "description": "На сторінках перевірки, додає кнопки для автоматичної перевірки роботи",
+  "permissions": ["storage"],
+
+  "action": {
+    "default_title": "Mix Helper",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [{
+    "matches": ["https://mix.sumdu.edu.ua/study_tools/drop/*"],
+    "js": ["vendor/jszip.min.js\", \"vendor/mammoth.browser.min.js\", \"content.js"],
+    "css": ["styles.css"],
+    "run_at": "document_idle"
+  }],
+
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "icons": {
+//   icon
+  },
+
+  "host_permissions": [
+    "https://mix.sumdu.edu.ua/*",
+    "https://mixsumdu.blob.core.windows.net/*",
+    "https://generativelanguage.googleapis.com/*"
+  ],
+
+  "manifest_version": 3
+}
