@@ -22,7 +22,7 @@
   },
 
   "icons": {
-//   icon
+    "1": "icons/icon.png"
   },
 
   "host_permissions": [
