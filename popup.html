@@ -9,6 +9,40 @@
     <body>
         <h2>Налаштування Gemini API</h2>
         <!--body-->
-        <script src="popup.js.js"></script>
+        <div class="row">
+            <input id="toggle" type="checkbox" />
+            <label for="toggle">Увімкнути кнопки на сторінці</label>
+        </div>
+        <div class="row" style="margin-top:8px">
+            <button id="test">Перевірити Gemini</button>
+        </div>
+        <div class="row" style="margin-top:8px">
+            <button id="listModels">Список моделей</button>
+        </div>
+        <div class="section">
+            <div class="section-title">API ключ Gemini</div>
+            <div class="row-vertical">
+                <input id="apiKey" type="password" placeholder="AIza...">
+                <button id="saveApiKey">Зберегти API ключ</button>
+                <div class="hint" id="apiKeyMsg"></div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Структура звіту AI (опціонально)</div>
+            <div class="row-vertical">
+<textarea id="reportStructure" placeholder="Залиште порожнім для стандартної
+структури. Приклад:
+ПЕРЕВІРЕНІ ФАЙЛИ:
+[список файлів]
+ОЦІНКА: [відсоток]
+ВИСНОВОК: [текст]"></textarea>
+                <button id="saveStructure">Зберегти структуру</button>
+                <div class="hint" id="structureMsg"></div>
+                <div class="hint">Якщо не вказано, використовується стандартна структура.</div>
+            </div>
+        </div>
+        <div class="hint" style="margin-top: 12px;">Діє для вкладки з Mix SumDU, може
+            знадобитись перезавантаження сторінки.</div>
+        <script src="popup.js"></script>
     </body>
 </html>
