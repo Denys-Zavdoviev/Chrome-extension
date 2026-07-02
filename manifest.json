@@ -1,6 +1,6 @@
 {
   "name": "Reviewer Helper",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "На сторінках перевірки, додає кнопки для автоматичної перевірки роботи",
   "permissions": ["storage"],
 
@@ -11,7 +11,9 @@
 
   "content_scripts": [{
     "matches": ["https://mix.sumdu.edu.ua/study_tools/drop/*"],
-    "js": ["vendor/jszip.min.js\", \"vendor/mammoth.browser.min.js\", \"content.js"],
+    "js": ["vendor/jszip.min.js",
+      "vendor/mammoth.browser.min.js",
+      "content.js"],
     "css": ["styles.css"],
     "run_at": "document_idle"
   }],
@@ -22,7 +24,9 @@
   },
 
   "icons": {
-    "1": "icons/icon.png"
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
 
   "host_permissions": [

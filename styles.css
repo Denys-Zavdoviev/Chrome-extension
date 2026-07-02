@@ -1,0 +1,49 @@
+.mix-review-helper-title{
+    color: #050c17;
+}
+
+.mix-review-helper-container{
+    border-top: 1px solid #ddd;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.mix-review-helper-btn{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    /*background-color: #3286fc;*/
+    background:linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), linear-gradient(90deg, #1C7AF6 0%, #8F68EA 33%, #E0767D 66%, #F6AC8A 100%);
+    border: 2px #e8f1fb solid;
+    border-radius: 2px;
+    padding: 6px 12px;
+    color: #e8f1fb;
+    /*text-shadow: 1px 1px 1px rgb(3, 7, 18);*/
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 5s ease-in-out;
+}
+.mix-review-helper-btn::before {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    background: linear-gradient(270deg, #1868d6 0%, #7e5acb 33%, #c5656c 66%, #df9978 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.mix-review-helper-btn:hover::before {
+    opacity: 1;
+}
+.mix-review-helper-btn:hover{
+    /*background: linear-gradient(270deg, #1868d6 0%, #7e5acb 33%, #c5656c 66%, #df9978 100%);*/
+    color: #e8f1fb;
+}
+
+.mix-review-helper-result{
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border: 2px #3286fc solid;
+    border-radius: 2px;
+}

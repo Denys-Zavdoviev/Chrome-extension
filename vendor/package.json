@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "jszip": "^3.10.1",
-    "mammoth": "^1.12.0"
-  }
-}
